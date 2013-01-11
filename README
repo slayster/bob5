@@ -1,14 +1,14 @@
-GCMS (Genie Content Management System)
-======================================
+BOB5 - An HTML5 Canvas Game Engine
+==================================
 
 For more information:
-http://www.geniedataservices.co.uk/gcms/
+http://www.slayweb.com/bob5 (coming soon)
 
 Copyright
 ---------
 
-Copyright (C) 2011
-    Brendan Ellis <brendan_at_geniedataserivces.co.uk>
+Copyright (C) 2013
+    Brendan Ellis <brendan_at_slayweb.com>
 
 License
 -------
@@ -26,23 +26,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-This product includes GeoLite data created by MaxMind,
-available from http://www.maxmind.com/.
 
 Requirements
 ------------
 
-* PHP 5 or later
 
 Summary
 -------
 
-I've spent ten years writing and re-writing various custom content management
-systems. Now it is time to bring all that experience together in to a single
-project. There has of course been re-use over the years but there is room for
-more. There have been versions of GCMS before, this will technically be the
-third major version. However the older versions were not publically released 
-and this version is to be a complete rewrite, so I have reset any version
-numbers. I have always avoided other frameworks in the past as I like to keep
-the whole codebase in my head so I always know exactly what it going on. So 
-this may not be much use to anyone but me, but the option is there.
+An HTML5 Canvas Game Engine
