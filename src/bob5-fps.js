@@ -9,10 +9,10 @@
 function FPSCounter() {
 
     function draw() {
-        genieCanvasBuffer.fillStyle= "rgb(127,255,0)";
-        genieCanvasBuffer.font = "bold 12px sans-serif";
-        genieCanvasBuffer.fillText(this.text1, 0, 10);
-        genieCanvasBuffer.fillText(this.text2, 0, 25);
+        bob5Buffer.fillStyle= "rgb(127,255,0)";
+        bob5Buffer.font = "bold 12px sans-serif";
+        bob5Buffer.fillText(this.text1, 0, 10);
+        bob5Buffer.fillText(this.text2, 0, 25);
     }
     
     function tick() {
