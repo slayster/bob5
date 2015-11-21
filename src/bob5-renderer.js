@@ -10,7 +10,7 @@ function bob5Renderer() {
 
     // main renderer repeated loop
     function doRender() {
-        bob5CanvasBuffer.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+        bob5Buffer.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
         // loop renderable objects - call their draw method - add to back buffer
         for (i=0; i<renderableObjects.length; i++) {
             if (renderableObjects[i]!=null) {

@@ -16,7 +16,7 @@ function bob5CanvasInit(elementID) {
     bob5BackBuffer = document.createElement('canvas');
     bob5BackBuffer.width = CANVAS_WIDTH;
     bob5BackBuffer.height = CANVAS_HEIGHT;
-    bob5CanvasBuffer = bob5BackBuffer.getContext("2d");
+    bob5Buffer = bob5BackBuffer.getContext("2d");
     
     renderer = new bob5Renderer();
     renderer.startRender();

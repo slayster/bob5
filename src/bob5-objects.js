@@ -9,8 +9,8 @@
 function b5roBackground(r,g,b) {
 
     function draw() {
-        genieCanvasBuffer.fillStyle = "rgb("+r+","+g+","+b+")";
-        genieCanvasBuffer.fillRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
+        bob5Buffer.fillStyle = "rgb("+r+","+g+","+b+")";
+        bob5Buffer.fillRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
     }
     
     this.r = parseInt(r);
@@ -26,9 +26,9 @@ function b5roBackground(r,g,b) {
 function b5roBackgroundImage(r,g,b,fn) {
 
     function draw() {
-        genieCanvasBuffer.fillStyle = "rgb("+r+","+g+","+b+")";
-        genieCanvasBuffer.fillRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
-        genieCanvasBuffer.drawImage(this.image,0,0);
+        bob5Buffer.fillStyle = "rgb("+r+","+g+","+b+")";
+        bob5Buffer.fillRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
+        bob5Buffer.drawImage(this.image,0,0);
     }
     
     this.r = parseInt(r);
@@ -46,7 +46,7 @@ function b5roBackgroundImage(r,g,b,fn) {
 function b5roSprite(fn,x,y,w,h) {
 
     function draw() {
-        genieCanvasBuffer.drawImage(this.image,this.x,this.y);
+        bob5Buffer.drawImage(this.image,this.x,this.y);
     }
     
     this.x = x;
@@ -65,7 +65,7 @@ function b5roSprite(fn,x,y,w,h) {
 function b5roAnimatedSprite(fn,x,y,w,h,d) {
     
     function draw() {
-        genieCanvasBuffer.drawImage(this.images[this.frame],this.x,this.y);
+        bob5Buffer.drawImage(this.images[this.frame],this.x,this.y);
     }
     
     function animate() {
@@ -103,7 +103,7 @@ function b5roAnimatedSprite(fn,x,y,w,h,d) {
 function b5roButton(fnOn,fnHover,fnClick,fnOff,x,y,w,h) {
 
     function draw() {
-        genieCanvasBuffer.drawImage(this.image, this.x, this.y);
+        bob5Buffer.drawImage(this.image, this.x, this.y);
     }
     
     function onMouseMove(xpos,ypos) {
@@ -164,7 +164,7 @@ function b5roButton(fnOn,fnHover,fnClick,fnOff,x,y,w,h) {
 function b5roCursor(fn,w,h) {
 
     function draw() {
-        genieCanvasBuffer.drawImage(this.image,this.x,this.y);
+        bob5Buffer.drawImage(this.image,this.x,this.y);
     }
 
    function setX(x) {
