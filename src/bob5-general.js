@@ -49,3 +49,11 @@ function bob5ReplaceCursor(filename, width, height) {
 function bob5Debug(message) {
     document.getElementById("bob5Debug").innerHTML = message;
 }
+
+function bob5ClearAll() {
+    renderer.clear();
+    hoverMonitor.clear();
+    mouseDownMonitor.clear();
+    mouseUpMonitor.clear();
+    mouseClickMonitor.clear();
+}
