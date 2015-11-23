@@ -74,7 +74,7 @@ function bob5MovementController() {
     }
     
     function remove(mo) {
-        movingObjects[ao.getMoverId()] = null;
+        movingObjects[mo.getMoverId()] = null;
     }
     
     function clear() {
