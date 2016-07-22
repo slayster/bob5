@@ -77,11 +77,11 @@ function renderableObject() {
     function getH() {
         return this.h;
     }
-    function setX(y) {
-        this.x = x;
+    function setX(xp) {
+        this.x = xp;
     }
-    function setY(y) {
-        this.y = y;
+    function setY(yp) {
+        this.y = yp;
     }
     this.rendererid = null;
     this.animatorid = null;
