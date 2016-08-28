@@ -310,7 +310,7 @@ function bob5KeyPressMonitor() {
     function add(ao) {
         id = this.getFreeSpot();
         keyPressObjects[id] = ao;
-        ao.setKeyPeessId(id);
+        ao.setKeyPressId(id);
         return id;
     }
     
