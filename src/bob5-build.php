@@ -8,12 +8,12 @@ $tomerge[1] = "./bob5-coreobject.js";
 $tomerge[2] = "./bob5-animation.js";
 $tomerge[3] = "./bob5-monitor.js";
 $tomerge[4] = "./bob5-mouse.js";
-$tomerge[4] = "./bob5-keyboard.js";
-$tomerge[5] = "./bob5-movement.js";
-$tomerge[6] = "./bob5-general.js";
-$tomerge[7] = "./bob5-objects.js";
-$tomerge[8] = "./bob5-renderer.js";
-$tomerge[9] = "./bob5-fps.js";
+$tomerge[5] = "./bob5-keyboard.js";
+$tomerge[6] = "./bob5-movement.js";
+$tomerge[7] = "./bob5-general.js";
+$tomerge[8] = "./bob5-objects.js";
+$tomerge[9] = "./bob5-renderer.js";
+$tomerge[10]= "./bob5-fps.js";
 
 echo "Open target file: $filename\r\n";
 

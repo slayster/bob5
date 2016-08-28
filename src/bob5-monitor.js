@@ -281,11 +281,11 @@ function bob5KeyPressMonitor() {
         } else {
             found = false;
             loopPos = this.currentSpace + 1;
-            if (loopPos>=keyPRessObjects.length) {
+            if (loopPos>=keyPressObjects.length) {
                 loopPos = 0;
             }
             while ( (loopPos!=this.currentSpace) && (!found) ) {
-                if ( keyPeessObjects[loopPos]==null ) {
+                if ( keyPressObjects[loopPos]==null ) {
                     found = true;
                 } else {
                     loopPos++;
