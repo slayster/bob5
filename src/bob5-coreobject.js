@@ -23,6 +23,8 @@ function renderableObject() {
     }
     function onMouseClick() {
     }
+    function onKeyPress() {
+    }
     function setRendererId(id) {
         this.rendererid = id;
     }
@@ -65,6 +67,12 @@ function renderableObject() {
     function getMouseClickId(id) {
         return this.mouseclickid;
     }
+    function setKeyPressId(id) {
+        this.keypressid = id;
+    }
+    function getKeyPressId(id) {
+        return this.keypressid;
+    }
     function getX() {
         return this.x;
     }
@@ -90,6 +98,7 @@ function renderableObject() {
     this.mousedownid = null;
     this.mouseupid = null;
     this.mouseclickid = null;
+    this.keypressid = null;
     this.setRendererId = setRendererId;
     this.getRendererId = getRendererId;
     this.setAnimatorId = setAnimatorId;
@@ -104,6 +113,8 @@ function renderableObject() {
     this.getMouseUpId = getMouseUpId;
     this.setMouseClickId = setMouseClickId;
     this.getMouseClickId = getMouseClickId;
+    this.setKeyPressId = setKeyPressId;
+    this.getKeyPressId = getKeyPressId;
     this.draw = draw;
     this.animate = animate;
     this.move = move;
@@ -111,6 +122,7 @@ function renderableObject() {
     this.onMouseDown = onMouseDown;
     this.onMouseUp = onMouseUp;
     this.onMouseClick = onMouseClick;
+    this.onKeyPress = onKeyPress;
     this.getX = getX;
     this.getY = getY;
     this.getW = getW;

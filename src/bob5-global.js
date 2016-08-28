@@ -89,3 +89,6 @@ var mouseUpObjects;
 
 var mouseClickMonitor;
 var mouseClickObjects;
+
+var keyPressMonitor;
+var keyPressObjects;

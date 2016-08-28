@@ -266,3 +266,69 @@ function bob5MouseClickMonitor() {
     this.clear = clear;
     this.getFreeSpot = getFreeSpot;
 }
+
+// ### KEY PRESS MONITOR OBJECT ### //
+
+function bob5KeyPressMonitor() {
+
+    function getFreeSpot() {
+        this.currentSpace++;
+        if (this.currentSpace>=keyPressObjects.length) {
+            this.currentSpace = 0;
+        }
+        if (keyPressObjects[this.currentSpace]==null) {
+            return this.currentSpace;
+        } else {
+            found = false;
+            loopPos = this.currentSpace + 1;
+            if (loopPos>=keyPRessObjects.length) {
+                loopPos = 0;
+            }
+            while ( (loopPos!=this.currentSpace) && (!found) ) {
+                if ( keyPeessObjects[loopPos]==null ) {
+                    found = true;
+                } else {
+                    loopPos++;
+                    if (loopPos>=keyPressObjects.length) {
+                        loopPos = 0;
+                    }
+                }
+            }
+            if (!found) {
+                loopPos++;
+                this.currentSize = this.currentSize + 100;
+                newroa = new Array(this.currentSize);
+                // arraycopy
+                //System.arraycopy(renderableObjects, 0, newroi, 0, renderableObjects.length-1);
+                //renderableObjects = newroi;
+            }
+            this.currentSpace = loopPos;
+            return this.currentSpace;            
+        }
+    }
+    
+    function add(ao) {
+        id = this.getFreeSpot();
+        keyPressObjects[id] = ao;
+        ao.setKeyPeessId(id);
+        return id;
+    }
+    
+    function remove(ao) {
+        keyPressObjects[ao.getKeyPressId()] = null;
+    }
+    
+    function clear() {
+        keyPressObjects = new Array(this.currentSize);
+        this.currentSpace = 0;
+    }
+    
+    this.currentSpace = 0;
+    this.currentSize = 300;
+    keyPressObjects = new Array(this.currentSize);
+    
+    this.add = add;
+    this.remove = remove;
+    this.clear = clear;
+    this.getFreeSpot = getFreeSpot;
+}

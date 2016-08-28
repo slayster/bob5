@@ -8,6 +8,7 @@ $tomerge[1] = "./bob5-coreobject.js";
 $tomerge[2] = "./bob5-animation.js";
 $tomerge[3] = "./bob5-monitor.js";
 $tomerge[4] = "./bob5-mouse.js";
+$tomerge[4] = "./bob5-keyboard.js";
 $tomerge[5] = "./bob5-movement.js";
 $tomerge[6] = "./bob5-general.js";
 $tomerge[7] = "./bob5-objects.js";

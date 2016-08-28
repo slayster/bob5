@@ -32,11 +32,18 @@ function bob5CanvasInit(elementID) {
     mouseUpMonitor = new bob5MouseUpMonitor();
     mouseClickMonitor = new bob5MouseClickMonitor();
     
+    keyPressMonitor = new bob5KeyPressMonitor();
+    
+    // listen for mouse inputs
     bob5Display.addEventListener('mousemove', bob5EventMouseMove, false);
     bob5Display.addEventListener('mouseover', bob5EventMouseOver, false);
     bob5Display.addEventListener('mousedown', bob5EventMouseDown, false);
     bob5Display.addEventListener('mouseup', bob5EventMouseUp, false);
     bob5Display.addEventListener('click', bob5EventMouseClick, false);
+    
+    // listen for keyboard inputs
+    bob5Display.addEventListener('keypress', bob5EventKeyPress, false);
+    
     
 }
 
@@ -56,4 +63,5 @@ function bob5ClearAll() {
     mouseDownMonitor.clear();
     mouseUpMonitor.clear();
     mouseClickMonitor.clear();
+    keyPressMonitor.clear();
 }
