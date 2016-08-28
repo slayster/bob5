@@ -42,7 +42,7 @@ function bob5CanvasInit(elementID) {
     bob5Display.addEventListener('click', bob5EventMouseClick, false);
     
     // listen for keyboard inputs
-    bob5Display.addEventListener('keypress', bob5EventKeyPress, false);
+    document.addEventListener('keypress', bob5EventKeyPress, false);
     
     
 }
